@@ -36,10 +36,11 @@ header{
     list-style-type:none;
     /* flex-wrap: wrap;
     justify-content: space-between; */
+    width: 100%;
     margin:0;
     padding:0;
-    width: 100%;
-    border: 1px solid purple;
+    border: 1px solid red;
+    position: relative;
 }
 
 #menu li {
@@ -60,13 +61,13 @@ header{
     margin: 0;
 }
 
-nav {
-    /* text-align: center; */
-    border: 1px solid red;
-    position: relative;
-    padding: 10px;
-    width: 100%;
+nav div {
+    display: inline-block;
+    border: 1px solid blue;
+    padding: 0;
+    margin: 0;
 }
+
 .nav-contact{
     display: none;
 }
@@ -89,10 +90,6 @@ nav {
     .content{
         width: 70%;
     }
-    /* .content, #logo{
-
-        margin-left: 50px;
-    } */
     .project{
         width: 45%;
     }
@@ -128,12 +125,15 @@ nav {
    .menu-toggle{
        display: block;
    }
+   nav div{
+       display: block;
+       width: 100%;
+   }
     #menu li{
+        border: 1px solid red;
         display: block;
         width: 100%;
         text-align: center;
     }
-    .nav{
-        width: 100%;
-    }
+
 }

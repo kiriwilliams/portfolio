@@ -8,6 +8,7 @@
     <!--Styles-->
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/light-theme.css">
     <title>Kira</title>
 </head>
 
@@ -15,26 +16,25 @@
 
     <header>
         <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
-            <span class="sr-only">Open main menu</span>
-            <span class="fa fa-bars" aria-hidden="true">open</span>
+            <span class="sr-only">Open menu</span>
+            <span class="fa fa-bars" aria-hidden="true">open menu</span>
         </button>
 
-        <h1 id="logo" class="nav">
-           <a href="index.html">JING</a>
+        <h1 id="logo">
+            <a href="index.html">JING</a>
         </h1>
-
-        <nav id="menu" class="menu" aria-label="Menu">
+    </header>
+        <nav id="menu" class="menu clearfix" aria-label="Menu">
             <ul>
-
-                <div id="internal-nav" class="nav">
-                    <li> <a href="index.html">About</a></li>
-                    <li> <a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </div>
-                <div id="external-nav" class="nav">
-                    <li> <a href="">github</a></li>
-                    <li><a href="">linkedIn</a></li>
-                </div>
+                <span id="internal-nav" class="float-left">
+                    <a href="index.html"><li>About</li></a>
+                    <a href="portfolio.html"><li>Portfolio</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </span>
+                <span id="external-nav" class="float-right">
+                    <a href=""><li>github</li></a>
+                    <a href=""><li>linkedIn</li></a>
+                </span>
                 <li class="nav-contact">
                     <div class="nav-contact">
                         Hello
@@ -42,10 +42,29 @@
                 </li>
             </ul>
         </nav>
-        <a href="#menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-    </header>
+   
     <main>
+        <section>
+            <h1 class="heading">Portfolio</h1>
+            <div>
+                <ul>
+                    <li>Javascript</li>
+                    <li>Handlebars</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="container">
+                <a href="">
+                    <div class="project">
+                        <h2></h2>
 
+                    </div>
+                    <div class="project description">
+
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>

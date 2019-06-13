@@ -1,3 +1,5 @@
+
+/* GENERAL */
 *{
     box-sizing: border-box;
     /* width: 100%; */
@@ -6,23 +8,30 @@ body{
     font-family: "helvetica", "arial", "sans-serif"
 }
 a{
-    margin: 0 5px;
+    /* margin: 0 5px; */
     text-decoration: none;
     pointer-events: auto;
 }
 a:hover, a:focus{
     text-decoration: underline;
 }
-.block{
-    display: block;
+
+button{
+    background: none;
+    border: 0;
 }
 
-/* #internal-nav{
-    border: 1px solid blue;
+
+.clearfix{
+    overflow: auto;
 }
-#external-nav{
-    border: 1px solid pink;
-} */
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 .hidden { 
     display: none;
 }
@@ -33,43 +42,52 @@ a:hover, a:focus{
 .float-right{
     float: right;
 }
-
+/*HEADER AND NAVBAR*/
 header{
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+}
+h1{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.heading{
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
 }
 #logo {
     margin-right: 20px;
+    text-align: left;
 }
 #menu {
     list-style-type:none;
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
     width: 100%;
-    margin:0;
-    padding:0;
+    padding:0 20px;
     position: relative;
+    overflow: hidden;
 }
 
 #menu li {
     display:inline-block;
     /* float: left; */
     margin-right: 1px;
+    height: 25px;
     pointer-events: none;
 }
 
 .menu-toggle {
-    background: none;
-    border: 0;
-    color: #333;
     float: right;
     font-family: inherit;
     font-size: 1em;
     height: 100%;
-    line-height: 1em;
+    /* line-height: 1em; */
     margin-bottom: 10px;
 }
+
 
 nav div {
     display: inline-block;
@@ -129,20 +147,20 @@ nav div {
    }
    #menu{
        display: none;
-       margin-top: 10px;
+       margin-bottom: 10px;
+       padding: 0;
    }
-   .menu-toggle{
-       display: block;
-   }
-   nav div{
-       display: block;
+   #menu span, #menu, #menu li, nav div{
        width: 100%;
    }
+   .menu-toggle, nav div, #menu li{
+       display: block;
+   }
+ 
     #menu li{
-        display: block;
-        width: 100%;
+        padding: 25px;
+        padding-bottom: 30px;
         text-align: center;
-        border: 1px solid plum;
     }
 
 }

@@ -15,12 +15,12 @@ $(document).ready(function() {
 
 toggleMenu = () => {
     if(menuState === "closed"){
-        $("#menu-toggle").attr("aria-label","Close menu").text("close");
+        $("#menu-toggle").attr("aria-label","Close menu").text("close menu");
         $("#menu").attr("style","display: block");
         menuState = "open";
     }
     else{
-        $("#menu-toggle").attr("aria-label","Open menu").text("open");
+        $("#menu-toggle").attr("aria-label","Open menu").text("open menu");
         $("#menu").attr("style","display: none");
         menuState = "closed";
     }
@@ -28,7 +28,7 @@ toggleMenu = () => {
 
 responsiveSizing = (width) => {
     if (width <= 640) {
-        $("#menu-toggle").show();
+        $("#menu-toggle").attr("aria-label","Open menu").text("open menu").show();
         $("#menu").attr("style", "display: none");
     }
     else{
